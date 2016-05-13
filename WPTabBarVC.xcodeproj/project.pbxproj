@@ -10,6 +10,8 @@
 		B6AF50771CE63980004423D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF50761CE63980004423D9 /* main.m */; };
 		B6AF507A1CE63980004423D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF50791CE63980004423D9 /* AppDelegate.m */; };
 		B6AF50821CE63980004423D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AF50811CE63980004423D9 /* Assets.xcassets */; };
+		B6AF508E1CE63E26004423D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF508D1CE63E26004423D9 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B6AF50911CE63E37004423D9 /* WPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF50901CE63E37004423D9 /* WPTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,10 @@
 		B6AF50791CE63980004423D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B6AF50811CE63980004423D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6AF50861CE63980004423D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AF508C1CE63E26004423D9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6AF508D1CE63E26004423D9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6AF508F1CE63E37004423D9 /* WPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTabBarController.h; sourceTree = "<group>"; };
+		B6AF50901CE63E37004423D9 /* WPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,10 @@
 				B6AF50781CE63980004423D9 /* AppDelegate.h */,
 				B6AF50791CE63980004423D9 /* AppDelegate.m */,
 				B6AF50811CE63980004423D9 /* Assets.xcassets */,
+				B6AF508C1CE63E26004423D9 /* ViewController.h */,
+				B6AF508D1CE63E26004423D9 /* ViewController.m */,
+				B6AF508F1CE63E37004423D9 /* WPTabBarController.h */,
+				B6AF50901CE63E37004423D9 /* WPTabBarController.m */,
 				B6AF50861CE63980004423D9 /* Info.plist */,
 				B6AF50751CE63980004423D9 /* Supporting Files */,
 			);
@@ -136,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AF508E1CE63E26004423D9 /* ViewController.m in Sources */,
 				B6AF507A1CE63980004423D9 /* AppDelegate.m in Sources */,
+				B6AF50911CE63E37004423D9 /* WPTabBarController.m in Sources */,
 				B6AF50771CE63980004423D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +279,7 @@
 				B6AF508B1CE63980004423D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
