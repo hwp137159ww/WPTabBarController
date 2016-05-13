@@ -45,13 +45,13 @@
         UIViewController *mainframeViewController = ({
             UIViewController *mainframeViewController = [[UIViewController alloc] init];
             
-            UIImage *mainframeImage   = [UIImage imageNamed:@"tabbar_mainframe"];
-            UIImage *mainframeHLImage = [UIImage imageNamed:@"tabbar_mainframeHL"];
+            UIImage *mainframeImage   = [UIImage imageNamed:@"tabbar_icon_news_normal"];
+            UIImage *mainframeHLImage = [UIImage imageNamed:@"tabbar_icon_news_highlight"];
             
-            mainframeViewController.title = @"微信";
-            mainframeViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"微信" image:mainframeImage selectedImage:mainframeHLImage];
-            mainframeViewController.view.backgroundColor = [UIColor colorWithRed:48 / 255.0 green:67 / 255.0 blue:78 / 255.0 alpha:1];
-            mainframeViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"barbuttonicon_add"]
+            mainframeViewController.title = @"新闻";
+            mainframeViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"新闻" image:mainframeImage selectedImage:mainframeHLImage];
+            mainframeViewController.view.backgroundColor = [UIColor colorWithRed:100 / 255.0 green:67 / 255.0 blue:78 / 255.0 alpha:1];
+            mainframeViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tabbar_setting_up"]
                                                                                                          style:UIBarButtonItemStylePlain
                                                                                                         target:self
                                                                                                         action:@selector(didClickAddButton:)];
@@ -62,12 +62,12 @@
         UIViewController *contactsViewController = ({
             UIViewController *contactsViewController = [[UIViewController alloc] init];
             
-            UIImage *contactsImage   = [UIImage imageNamed:@"tabbar_contacts"];
-            UIImage *contactsHLImage = [UIImage imageNamed:@"tabbar_contactsHL"];
+            UIImage *contactsImage   = [UIImage imageNamed:@"tabbar_icon_bar_normal"];
+            UIImage *contactsHLImage = [UIImage imageNamed:@"tabbar_icon_bar_highlight"];
             
             contactsViewController.title = @"通讯录";
             contactsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"通讯录" image:contactsImage selectedImage:contactsHLImage];
-            contactsViewController.view.backgroundColor = [UIColor colorWithRed:115 / 255.0 green:155 / 255.0 blue:6 / 255.0 alpha:1];
+            contactsViewController.view.backgroundColor = [UIColor colorWithRed:115 / 255.0 green:15 / 255.0 blue:6 / 255.0 alpha:1];
             
             contactsViewController;
         });
@@ -75,12 +75,12 @@
         UIViewController *discoverViewController = ({
             UIViewController *discoverViewController = [[UIViewController alloc] init];
             
-            UIImage *discoverImage   = [UIImage imageNamed:@"tabbar_discover"];
-            UIImage *discoverHLImage = [UIImage imageNamed:@"tabbar_discoverHL"];
+            UIImage *discoverImage   = [UIImage imageNamed:@"tabbar_icon_found_normal"];
+            UIImage *discoverHLImage = [UIImage imageNamed:@"tabbar_icon_found_highlight"];
             
             discoverViewController.title = @"发现";
             discoverViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:discoverImage selectedImage:discoverHLImage];
-            discoverViewController.view.backgroundColor = [UIColor colorWithRed:32 / 255.0 green:85 / 255.0 blue:128 / 255.0 alpha:1];
+            discoverViewController.view.backgroundColor = [UIColor colorWithRed:32 / 255.0 green:85 / 255.0 blue:60 / 255.0 alpha:1];
             
             discoverViewController;
         });
@@ -88,18 +88,18 @@
         UIViewController *meViewController = ({
             UIViewController *meViewController = [[UIViewController alloc] init];
             
-            UIImage *meImage   = [UIImage imageNamed:@"tabbar_me"];
-            UIImage *meHLImage = [UIImage imageNamed:@"tabbar_meHL"];
+            UIImage *meImage   = [UIImage imageNamed:@"tabbar_icon_me_normal"];
+            UIImage *meHLImage = [UIImage imageNamed:@"tabbar_icon_me_highlight"];
             
             meViewController.title = @"我";
             meViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我" image:meImage selectedImage:meHLImage];
-            meViewController.view.backgroundColor = [UIColor colorWithRed:199 / 255.0 green:135 / 255.0 blue:56 / 255.0 alpha:1];
+            meViewController.view.backgroundColor = [UIColor colorWithRed:19 / 255.0 green:135 / 255.0 blue:56 / 255.0 alpha:1];
             
             meViewController;
         });
         
-        tabBarController.title = @"微信";
-        tabBarController.tabBar.tintColor = [UIColor colorWithRed:26 / 255.0 green:178 / 255.0 blue:10 / 255.0 alpha:1];
+        tabBarController.title = @"网易新闻";
+        tabBarController.tabBar.tintColor = [UIColor redColor];
         
         tabBarController.viewControllers = @[
                                              [[UINavigationController alloc] initWithRootViewController:mainframeViewController],
@@ -116,7 +116,7 @@
 - (void)didClickAddButton:(id)sender {
     ViewController *viewController = [[ViewController alloc] init];
     
-    viewController.title = @"添加";
+    viewController.title = @"设置";
     viewController.view.backgroundColor = [UIColor colorWithRed:26 / 255.0 green:178 / 255.0 blue:10 / 255.0 alpha:1];
     
     [self.navigationController pushViewController:viewController animated:YES];
